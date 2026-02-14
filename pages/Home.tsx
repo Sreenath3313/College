@@ -114,7 +114,7 @@ const Home: React.FC = () => {
                      className="flex flex-col items-center"
                   >
                      {/* Massive Title - Outline Style */}
-                     <h1 className="font-cinzel font-black leading-[0.85] tracking-tighter mb-6
+                     <h1 className="font-serif font-black leading-[0.85] tracking-tighter mb-6
                         text-[8rem] md:text-[12rem] lg:text-[16rem] 
                         text-transparent [-webkit-text-stroke:2px_white] select-none z-10 
                      "
