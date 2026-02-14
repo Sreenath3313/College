@@ -114,19 +114,16 @@ const Home: React.FC = () => {
                      className="flex flex-col items-center"
                   >
                      {/* Massive Title - Outline Style */}
-                     <h1
-                        className="font-cinzel font-black leading-[0.85] tracking-tighter mb-6
-  text-[8rem] md:text-[12rem] lg:text-[16rem]
-  text-transparent bg-clip-text bg-center bg-cover
-  [-webkit-text-stroke:2px_white] select-none z-10"
+                     <h1 className="font-cinzel font-black leading-[0.85] tracking-tighter mb-6
+                        text-[8rem] md:text-[12rem] lg:text-[16rem] 
+                        text-transparent [-webkit-text-stroke:2px_white] select-none z-10 
+                     "
                         style={{
-                           backgroundImage: "url('/images/hero.jpg')", // <-- change to your image path
-                           filter: "drop-shadow(0 0 20px rgba(255,255,255,0.4))"
+                           filter: 'drop-shadow(0 0 20px rgba(255, 255, 255, 0.4))'
                         }}
                      >
                         SRIT
                      </h1>
-
 
                      {/* Subtitle Separator */}
                      <div className="h-px w-96   bg-gradient-to-r from-transparent via-orange-500 to-transparent mb-6 opacity-80"></div>
