@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-orange-500;
+  }
+
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/40 transition-all duration-300;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    /* Replacing complex arbitrary shadow */
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.16);
+  }
+
+  .glass-dark {
+    @apply bg-secondary-900/80 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .neo-button {
+    @apply relative overflow-hidden bg-primary-500 text-white font-bold uppercase tracking-widest px-8 py-4 rounded-full transition-all transform hover:-translate-y-1 active:scale-95;
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+  }
+
+  .neo-button:hover {
+    box-shadow: 0 0 40px rgba(249, 115, 22, 0.6);
+  }
+
+  .soft-shadow {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #fafafa;
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+html {
+  font-size: 82.5%;
+  scroll-behavior: smooth;
+}
+
+/* Performance Optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.hardware-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Pause animations on hover */
+.hover-pause:hover {
+  animation-play-state: paused;
+}
+
+/* Reduce Paint Areas */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: 800px;
+}
